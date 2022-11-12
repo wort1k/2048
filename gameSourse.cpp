@@ -40,14 +40,8 @@ std::vector<int> field::free() {
 }
 void field::fill(std::vector<int> free) {
 	srand((unsigned)time(NULL));
-	int pos = free[rand() % free.size() + 1];
-	int num = 2;
-	srand((unsigned)time(NULL));
-	if (rand() % 5 + 1 == 1)
-	{
-		num = 4;
-	}
-	field_[getRow(pos)][GetColumn(pos)] = num;
+	int pos = free[rand() % free.size()];
+	field_[getRow(pos)][GetColumn(pos)] = 2;
 }
 
 int main() {
