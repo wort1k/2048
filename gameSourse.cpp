@@ -28,17 +28,4 @@ void field::show() {
 	}
 	std::cout << "_________________________________\n";
 }
-int fib(int n) {
-	int pred = 0; int posl = 1;
-	for (int i = 2; i <= n; i++)
-	{
-		int tmp = posl;
-		posl += pred;
-		pred = tmp;
-	}
-	return posl;
-}
-int main() {
-	for(int i = 1; i < 20; ++i)
-		cout << fib(i) << " ";
- }
+int maint() { return 0; }
