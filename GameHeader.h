@@ -12,12 +12,13 @@ private:
 	matrix field_ = { {0,0,0,0},{0,0,0,0},{0,0,0,0},{0,0,0,0} };
 public:
 	matrix data();
-	void fill();
+	void fill(std::vector<int>);
 	void moveRight();
 	void moveLeft();
 	void moveUp();
 	void moveDown();
 	void show();
+	std::vector<int> free();
 };
 
 
